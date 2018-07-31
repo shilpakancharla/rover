@@ -5,7 +5,7 @@ using namespace std;
 
 // main() is where program execution begins
 int main() {
-	cout << "Hello World"; //prints Hello World
+	cout << "Hello World" << endl; //prints Hello World
 	cout << "Size of char : " << sizeof(char) << endl;
 	cout << "Size of int : " << sizeof(int) << endl;
 	cout << "Size of short int : " << sizeof(short int) << endl;
