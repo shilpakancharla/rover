@@ -14,5 +14,11 @@ int main() {
 	cout << "Size of double : " << sizeof(double) << endl;
 	cout << "Size of wchar_t : " << sizeof(wchar_t) << endl;
 
+	extern int d = 3, f = 5; 
+	//declaration of d and f; extern keyword used to declare a variable at any place
+	int d = 3; f = 5; //definition and initializing d and f.
+	byte z = 22; //definition and initializes z.
+	char x = 'x'; //the variable x has the value 'x'.	
+
 	return 0;
 }
