@@ -32,6 +32,25 @@ int main() {
 
 	cout << "Size of int: " << sizeof(myAge) << endl; // can do the same for the rest of data types
 
+	int largestInt = 2147483647;
+
+	cout << "Largest int " << largestInt << endl; //largest integer that can be printed
+
+	//arithmetic, can use +, -, *, /, % (modulus), ++, --
+
+	int five = 5;
+
+	cout << "5++ = " << five++ << endl;
+	cout << "++5 = " << ++five << endl;
+	cout << "5-- = " << five-- << endl;
+	cout << "--5 = " << --five << endl;
+
+	//five += 6; five = five + 6 (same thing)
+
+	//order of operations
+	cout << "1 + 2 - 3 * 2 = " << 1 + 2 - 3 * 2 << endl;
+	cout << "(1 + 2 - 3) * 2 = " << (1 + 2 - 3) * 2 << endl;
+
 	//other types include
 	// short int: at least 16 bits
 	// long int: at least 32 bits
