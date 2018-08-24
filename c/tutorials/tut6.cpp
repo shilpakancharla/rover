@@ -19,6 +19,17 @@ int addNumbers(int firstNum, int secondNum, int thirdNum) {
 	return firstNum + secondNum + thirdNum;
 }
 
+//recursive function
+
+int getFactorial(int number) {
+	
+	int sum;
+	
+	if(number == 1) sum = 1;
+	else sum = getFactorial(number - 1) * number;
+	return sum;
+}
+
 
 int main() {
 
@@ -26,5 +37,6 @@ int main() {
 
 	cout << addNumbers(1, 5, 6) << endl;
 
+	cout << "The factorial of 3 is " << getFactorial(3) << endl;
 	return 0;
 }
