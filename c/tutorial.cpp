@@ -51,6 +51,10 @@ int main() {
 	cout << "1 + 2 - 3 * 2 = " << 1 + 2 - 3 * 2 << endl;
 	cout << "(1 + 2 - 3) * 2 = " << (1 + 2 - 3) * 2 << endl;
 
+	cout << "4 / 5 = " << 4 / 5 << endl; //does not provide intended result; you need casting
+
+	cout << "4 / 5 = " << (float) 4 / 5 << endl; //can use int also
+
 	//other types include
 	// short int: at least 16 bits
 	// long int: at least 32 bits
