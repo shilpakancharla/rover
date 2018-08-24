@@ -19,7 +19,7 @@ int main() {
 
 	cout << lotteryNumVector.at(5) << endl;
 		
-	lotteryNumVector.push_back(64);
+	lotteryNumVector.push_back(64); //adds this element at the end
 
 	cout << "Final Value " << lotteryNumVector.back() << endl;
 
@@ -29,7 +29,8 @@ int main() {
 
 	cout << "Size " << lotteryNumVector.size() << endl;
 
-	lotteryNumVector.pop_back();
+	lotteryNumVector.pop_back(); //removes last element of vector
+	//reduces container size by one
 
 	return 0;
 
