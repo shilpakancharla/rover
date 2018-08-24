@@ -46,6 +46,8 @@ int main() {
 			
 			cout << myName[j][k];
 		}
+
+		 cout << endl;
 	}
 
 	return 0;
