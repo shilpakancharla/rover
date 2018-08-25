@@ -38,5 +38,6 @@ int main() {
 	cout << addNumbers(1, 5, 6) << endl;
 
 	cout << "The factorial of 3 is " << getFactorial(3) << endl;
+
 	return 0;
 }
