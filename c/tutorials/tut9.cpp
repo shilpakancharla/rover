@@ -5,6 +5,16 @@
 
 using namespace std;
 
+void makeMeYoung(int* age) {
+
+	cout << "I used to be " << *age << endl;
+	*age = 21;
+}
+
+void actYourAge(int& age) {
+	age = 39;
+}
+
 int main() {
 
 	int myAge = 39;
@@ -36,6 +46,22 @@ int main() {
 	cout << "Address " << numArrayPtr << " Value " << *numArrayPtr << endl;
 
 	cout << "Address " << badNums << " Value " << *badNums << endl;
+
+	makeMeYoung(&myAge);
+
+	cout << "I'm " << myAge << " years old now" << endl;
+
+	int& ageRef = myAge;
+
+	cout << "myAge : " << myAge << endl;
+
+	ageRef++;
+
+	cout << "myAge : " << myAge << endl;
+
+	actYourAge(ageRef);
+
+	cout << "myAge : " << myAge << endl;
 
 	return 0;
 
