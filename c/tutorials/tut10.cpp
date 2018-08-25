@@ -102,7 +102,7 @@ class Dog : public Animal{
 
 		Dog(int, int, string, string);
 
-		Dog() : Animla(){};
+		Dog() : Animal(){};
 
 		void toString();
 
