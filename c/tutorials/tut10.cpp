@@ -90,6 +90,33 @@ void Animal::toString() {
 
 }
 
+class Dog : public Animal{
+
+	private: 
+		string sound = "Woof";
+
+	public:
+		void getSound() {
+			cout << sound << endl;
+		}
+
+		Dog(int, int, string, string);
+
+		Dog() : Animla(){};
+
+		void toString();
+
+};
+
+Dog::Dog(int height, int weight, string name, string bark) :
+Animal(height, weight, name) {
+	this -> sound = bark;
+
+}
+
+void Dog::toString() {
+	cout << this -> getName() << " is " << this -> getHeight() << " cms tall and " << this -> getWeight() << " kgs in weight and says " << this -> sound << endl;
+
 int main() {
 
 	Animal fred; //constructor with no attributes
@@ -104,6 +131,17 @@ int main() {
 	Animal tom(36, 15, "Tom"); //constructor with attributes
 
 	cout << tom.getName() << " is " << tom.getHeight() << " cms tall and " << tom.getWeight() << " kgs in weight " << endl;
+
+	Dog spot(38, 16, "Spot", "Woof");
+
+	cout << "Number of Animals " << Animal::getNumOfAnimals() << endl;
+
+	spot.getSound();
+
+	tom.toString();
+	spot.toString();
+
+	spot.Animal::toString();
 
 	return 0;
 
